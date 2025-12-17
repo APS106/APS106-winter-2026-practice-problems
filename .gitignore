@@ -10,6 +10,9 @@
 !*.pdf
 !*.csv
 !*.css
+!*.tex
+!*.pdf
+!*.docx
 # etc...
 
 # ...even if they are in subdirectories
