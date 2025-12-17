@@ -9,6 +9,7 @@
 !*.txt
 !*.pdf
 !*.csv
+!*.css
 # etc...
 
 # ...even if they are in subdirectories
