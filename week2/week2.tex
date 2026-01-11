@@ -1,0 +1,99 @@
+\documentclass{../pset}
+
+% User Information
+\course{APS106H1: Fundamentals of Computer Programming}
+\assignment{Problem Set 2}
+
+
+\begin{document}
+
+\begin{problem}
+Write a function that takes in a three-digit integer and returns the "flipped" version (that is, with its digits reversed). For example:
+ 
+\begin{lstlisting}[language={}]
+$ Enter a positive number less than 1000: 177
+That number flipped is 771
+\end{lstlisting}
+Your function should take the user-input integer as an argument and return the flipped integer. That means all your input and output with the user should be in your "main" code, not in the function.
+
+\textit{Hints:}
+\begin{itemize}
+\item  Consider using the arithmetic operators \lstinline|//| and \lstinline|%| to solve this problem.
+\item Make sure it works if the user enters a one- or two-digit integer. For example, 37 flipped is 730, and 8 flipped is 800.
+\end{itemize}
+\end{problem}
+
+
+
+\begin{problem}
+
+Write a function that takes in a positive integer and prints the minimum number of quarters, dimes, nickels, and pennies needed to make up that amount.  
+For example:
+\begin{lstlisting}[language={}]
+$ Enter a number of cents: 67
+2 quarter(s), 1 dime(s), 1 nickel(s), 2 penny(ies)
+\end{lstlisting}
+
+
+The prompt for the user should be outside the function but the printing should be \textbf{inside} the function.
+In case you are not familiar with Canadian currency: 
+\begin{itemize}
+\item  a quarter is 25 cents
+\item  a dime is 10 cents
+\item  a nickel is 5 cents
+\item a penny is 1 cent
+\end{itemize}
+Use the minimum number of coins that you can by first maximizing the number of quarters, then the number of dimes, etc
+
+\end{problem}
+
+
+\begin{problem}
+ Write a function that takes floating-point number and then prints two values: the number truncated to the first decimal place and the number rounded to the first decimal place. For example:
+
+\begin{lstlisting}[language={}]
+$ Enter a number: 4.158
+Truncated to one decimal place: 4.1
+Rounded to one decimal place: 4.2
+\end{lstlisting}
+The prompt for the user should be \textbf{outside} the function but the printing should be inside the function
+
+\textit{Hint:} For truncating, there are multiple ways to achieve this. Think about using \lstinline|int|, or alternatively, you can also think about using the \href{https://docs.python.org/3/library/math.html}{\lstinline|math|} module.
+\end{problem}
+
+
+\begin{problem}
+
+Write a  trigonometry function. Ask a user for an angle, specified in \textbf{degrees}. Then print the sine, cosine, and tangent of that angle. Round to 3 decimal places. For example:
+\begin{lstlisting}[language={}]
+$ Enter an angle in degrees:  60
+sin(60.0) is 0.866
+cos(60.0) is 0.5
+tan(60.0) is 1.732
+\end{lstlisting}
+
+
+
+Printing should occur \textbf{inside} the function. You can use \href{https://docs.python.org/3/library/math.html}{\lstinline|math|} module, where applicable.
+\end{problem}
+
+\begin{problem}
+
+
+Write a function that takes a positive integer input less than 100,000 and returns an integer corresponding to the number of digits in the number. Use this function in a program that prompts the user for an integer and prints the number of digits in the user's input. All input and printing to the user should be \textbf{outside} the function. For example:
+\begin{lstlisting}[language={}]
+$ Please input a number less than 100,000:  1234
+You number has 4 digits.
+\end{lstlisting}
+
+
+
+\textbf{Note,}  try to solve this problem through multiple approaches:
+\begin {itemize}
+\item Think about how to use string \lstinline|str| and \lstinline|len| function to approach it.
+\item Also think about solving it mathematically by transforming the integer. Hint, the transformation function in question can be found in the \href{https://docs.python.org/3/library/math.html}{\lstinline|math|} module.
+\item Don't use an if-statement (that is for next week). 
+\end{itemize}
+\end{problem}
+
+\end{document}

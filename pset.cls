@@ -10,7 +10,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{amsmath, amssymb, amsthm}
 
-
+\RequirePackage{hyperref}
 \RequirePackage{listings}
 \RequirePackage{xcolor}
 
